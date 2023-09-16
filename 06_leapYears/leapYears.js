@@ -3,11 +3,14 @@ const leapYears = function(year) {
     const year4 = year%4 == 0;
     const year100 = year % 100 == 0;
 
+    /*
 if (year400) return true;
 else if (year100) return false;
 else if (year4) return true;
 return false;
-            
+  */
+ 
+return year4 && (!year100 || year400)
 
     };
 
