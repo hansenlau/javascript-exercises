@@ -24,6 +24,15 @@ const power = function(a,b) {
 	return Math.pow(a,b);
 };
 
+const factorial = function (n) {
+  if (n === 0) return 1;
+  let product = 1;
+  for (let i = n; i > 0; i--) {
+    product *= i;
+  }
+  return product;
+};
+/*
 const factorial = function(n) {
 	let f = [];
   if ( n == 0 || n == 1) return 1;
@@ -33,6 +42,7 @@ const factorial = function(n) {
   
 
 };
+*/
 
 // Do not edit below this line
 module.exports = {
